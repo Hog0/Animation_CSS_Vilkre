@@ -1,0 +1,134 @@
+:root {
+    --light-green: rgba(31, 73, 23, 0.3);
+    --medium-green: rgba(21, 34, 16, 0.4);
+    --wight: rgb(255, 255, 255);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--wight);
+}
+
+.back-picture {
+    background-image:
+    linear-gradient(to right top, var(--light-green),var(--medium-green)),
+    url('../img/html.jpeg');
+}
+
+.main-container {
+    height: 95vh;
+    background-image: 
+        linear-gradient(to right bottom,var(--light-green),var(--medium-green)),
+        url('../img/computer.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+}
+
+.main-content {
+    top: 40%;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.CCS-Animation {
+    display: block;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(150px)
+    }
+    100%{
+        opacity: 1;
+        transform:translate(0)
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 4rem auto;
+    padding: 0;
+    text-align: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+ul li {
+    text-align: center;
+    display: inline-block;
+    height: 7%;
+    width: 20%;
+    padding: 2rem;
+    position: relative;
+    border: 2px solid #fff;    
+    transition: transform 1s;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+.item1 {
+    opacity: 0;
+    animation-name: item1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item1{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.item2 {
+    opacity: 0;
+    animation-name: item2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item2{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.item3 {
+    opacity: 0;
+    animation-name: item2;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item3{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
