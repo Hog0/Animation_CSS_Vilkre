@@ -45,7 +45,7 @@ body {
 .CCS-Animation {
     display: block;
     font-size: 4rem;
-    letter-spacing: 1rem;
+    letter-spacing: 16px;
     animation-name: moveInRight;
     animation-duration: 3s;
 }
