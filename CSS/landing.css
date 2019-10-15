@@ -3,6 +3,8 @@ body {
     color: #c0ffb3;
     text-align: center;
     line-height: 1.6;
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
