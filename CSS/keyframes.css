@@ -1,5 +1,7 @@
 body {
     background: url('../img/nature2.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .main-container {
