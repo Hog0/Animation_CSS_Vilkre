@@ -12,6 +12,8 @@
 body {
     background:
     url('../img/nature1.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .box {
