@@ -22,7 +22,6 @@ body {
     background-image:
     linear-gradient(to right top, var(--light-green),var(--medium-green)),
     url('../img/html.jpeg');
-    background-size: cover;
 }
 
 .main-container {
